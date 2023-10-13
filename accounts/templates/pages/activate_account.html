@@ -1,0 +1,9 @@
+{% autoescape off %}
+
+
+hi {{user.first_name}}
+Please Activate Your Account by tab the link below
+
+http://{{site}}{% url 'account:activate' uid token %}
+
+{% endautoescape %}
